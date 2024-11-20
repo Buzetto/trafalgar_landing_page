@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mulish", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*Variáveis*/
+:root {
+    --text-bold: #1F1534;
+    --text-general: #7D7987;
+    --text-white: #FFFFFF;
+    --button-text: #458FF6;
+    --buton-border: #458FF6;
+}
+
+/*Header*/
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.header-menu a {
+    display: inline-block;
+    padding: 16px 0px;
+    position: relative;
+    color: var(--text-general);
+    transition: transform 0.2s, color 0.2s;
+}
+
+.header-menu a:hover {
+    color: var(--text-bold);
+    font-weight: 700;
+    width: 100%;
+}
