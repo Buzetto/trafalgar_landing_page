@@ -58,35 +58,35 @@ body {
 }
 
 /*Main*/
-.conteudo-principal {
+.principal-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.conteudo-principal-conteudo {
+.principal-content-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 35px;
+    gap: 40px;
 }
 
-.conteudo-principal-conteudo h1 {
+.principal-content-content h1 {
     font-size: 3rem;
 }
 
-.conteudo-principal-conteudo p {
+.principal-content-content p {
     color: var(--text-general);
     font-size: 1.3rem;
 }
 
-.conteudo-principal-conteudo img {
+.principal-content-content img {
     width: 693px;
     height: 598px;
 }
 
-.conteudo-principal-conteudo button {
+.principal-content-content button {
     padding: 15px 40px;
     border: none;
     background-color: var(--buton-border);
@@ -94,3 +94,83 @@ body {
     border-radius: 55px;
     cursor: pointer;
 }
+
+/*First Section*/
+.first-section {
+    padding-top: 140px;
+}
+
+.first-section-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.first-section-content h2 {
+    font-size: 1.6rem;
+}
+
+.rectangle {
+    width: 56px;
+    height: 4px;
+    background-color: var(--text-bold);
+    border-radius: 5px;
+}
+
+.first-section-content p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.first-section-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.first-section-grid-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: #fdfdfd;
+    padding: 20px;
+    max-width: 350px; /* Largura máxima */
+    max-height: 354px; /* Altura máxima */
+}
+
+.first-section-grid-content img {
+    width: 100px;
+    height: 90px;
+}
+
+.first-section-grid-content h3 {
+    font-size: 1.5rem;
+}
+
+.first-section-grid-content p {
+    font-size: 1rem;
+    color: var(--text-general);
+}
+
+.first-section-content-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 50px;
+}
+
+.first-section-content-button button {
+    padding: 15px 40px;
+    border: solid 1px var(--buton-border);
+    background-color: #FFFFFF;
+    color: var(--button-text);
+    border-radius: 55px;
+    cursor: pointer;    
+}
+
