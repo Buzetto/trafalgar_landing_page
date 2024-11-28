@@ -24,6 +24,14 @@ body {
     --buton-border: #458FF6;
 }
 
+/*Rectangule Global*/
+.rectangle {
+    width: 56px;
+    height: 4px;
+    background-color: var(--text-bold);
+    border-radius: 5px;
+}
+
 /*Header*/
 .header {
     display: flex;
@@ -44,17 +52,14 @@ body {
 }
 
 .header-menu a {
-    display: inline-block;
     padding: 16px 0px;
-    position: relative;
     color: var(--text-general);
-    transition: transform 0.2s, color 0.2s;
+    transition: transform 0.3s, color 0.2s;
 }
 
 .header-menu a:hover {
     color: var(--text-bold);
     font-weight: 700;
-    width: 100%;
 }
 
 /*Main*/
@@ -62,6 +67,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 80px;
 }
 
 .principal-content-content {
@@ -86,13 +92,21 @@ body {
     height: 598px;
 }
 
-.principal-content-content button {
+.principal-content-content a {
     padding: 15px 40px;
     border: none;
+    border: 1px solid transparent;
     background-color: var(--buton-border);
     color: var(--text-white);
     border-radius: 55px;
     cursor: pointer;
+    transition: 0.3s;
+}
+
+.principal-content-content a:hover {
+    background-color: var(--text-white);
+    color: var(--button-text);
+    border: 1px solid var(--button-text);
 }
 
 /*First Section*/
@@ -112,13 +126,6 @@ body {
 
 .first-section-content h2 {
     font-size: 1.6rem;
-}
-
-.rectangle {
-    width: 56px;
-    height: 4px;
-    background-color: var(--text-bold);
-    border-radius: 5px;
 }
 
 .first-section-content p {
@@ -157,7 +164,7 @@ body {
     color: var(--text-general);
 }
 
-.first-section-content-button {
+.first-section-content-a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,7 +172,7 @@ body {
     padding-top: 50px;
 }
 
-.first-section-content-button button {
+.first-section-content-a a {
     padding: 15px 40px;
     border: solid 1px var(--buton-border);
     background-color: #FFFFFF;
@@ -174,3 +181,122 @@ body {
     cursor: pointer;    
 }
 
+.first-section-content-a a:hover {
+    background-color: var(--button-text);
+    color: var(--text-white);
+    border: 1px solid var(--button-text);
+}
+
+
+/*Second Section*/
+.second-section {
+    padding-top: 120px;
+}
+
+.second-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.second-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.second-section-content h1 {
+    font-size: 2.25rem;
+}
+
+.second-section-content p {
+    color: var(--text-general);
+    font-size: 1.12rem;
+}
+
+.second-section-container img {
+    width: 693px;
+    height: 598px;
+}
+
+.second-section-content a {
+    padding: 15px 40px;
+    border: solid 1px var(--buton-border);
+    background-color: #FFFFFF;
+    color: var(--button-text);
+    border-radius: 55px;
+    cursor: pointer; 
+}
+
+.second-section-content a:hover {
+    background-color: var(--button-text);
+    color: var(--text-white);
+    border: 1px solid var(--button-text);
+}
+
+/*Third Section*/
+.third-section {
+    padding-top: 120px;
+}
+
+.third-section-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.third-section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.third-section-content h1 {
+    font-size: 2.25rem;
+}
+
+.third-section-content p {
+    color: var(--text-general);
+    font-size: 1.12rem;
+}
+
+.third-section-container img {
+    width: 693px;
+    height: 598px;
+}
+
+
+.third-section-content a {
+    padding: 15px 40px;
+    border: solid 1px var(--buton-border);
+    background-color: #FFFFFF;
+    color: var(--button-text);
+    border-radius: 55px;
+    cursor: pointer;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.third-section-content a:hover {
+    background-color: var(--button-text);
+    color: var(--text-white);
+    border: 1px solid var(--button-text);
+}
+
+.third-section-content a::after {
+    content: "";
+    display: inline-block;
+    background: url(./assets/arrow_down.svg) no-repeat center;
+    background-size: contain;
+    width: 9px;
+    height: 15px;
+    margin-left: 8px;
+}
