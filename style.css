@@ -10,8 +10,11 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -50,6 +53,8 @@ body {
     padding-bottom: 20px;
     padding-left: 40px;
     padding-right: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-menu {
@@ -62,6 +67,7 @@ body {
     padding: 16px 0px;
     color: var(--text-general);
     transition: transform 0.3s, color 0.2s;
+    font-size: 1.12rem;
 }
 
 .header-menu a:hover {
@@ -70,6 +76,11 @@ body {
 }
 
 /*Main*/
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .principal-content {
     display: flex;
     align-items: center;
@@ -120,6 +131,8 @@ body {
 /*First Section*/
 .first-section {
     padding-top: 140px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .first-section-content {
@@ -197,6 +210,8 @@ body {
 /*Second Section*/
 .second-section {
     padding-top: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .second-section-container {
@@ -246,6 +261,8 @@ body {
 /*Third Section*/
 .third-section {
     padding-top: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .third-section-container {
@@ -309,6 +326,8 @@ body {
 /*Feedback Section*/
 .feedback-section {
     padding-top: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .feedback-section-container {
@@ -366,6 +385,8 @@ body {
 /*Galery Section*/
 .gallery-section {
     padding-top: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .gallery-section-title {
@@ -430,4 +451,61 @@ body {
     width: 15px;
     height: 9px;
     margin-left: 25px;
+}
+
+/*Footer*/
+footer {
+    padding: 40px;
+    width: 100%;
+    margin-top: 150px;
+    background: linear-gradient(#67C3F3, #5A98F2);
+}
+
+.footer {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    padding: 40px;
+}
+
+.footer-rights {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.footer-rights img {
+    width: 160px;
+    height: 41px;
+}
+
+.footer-rights p {
+    font-size: 1.12rem;
+    color: var(--text-white);
+}
+
+.footer-rights p:last-child {
+    font-size: 1rem;
+    color: var(--text-white);
+}
+
+.footer-logo-nav {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-logo-nav h3 {
+    font-size: 1.25rem;
+    color: var(--text-white);
+}
+
+.footer-logo-nav a {
+    font-size: 1.12rem;
+    color: var(--text-white);
 }
