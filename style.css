@@ -509,3 +509,7 @@ footer {
     font-size: 1.12rem;
     color: var(--text-white);
 }
+
+.footer-logo-nav a:hover {
+    font-weight: 700;
+}
