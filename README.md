@@ -18,4 +18,4 @@ Essa experiência tem sido uma ótima forma de consolidar meu conhecimento e ava
 
 ## Link para o Projeto
 
-[**Acesse a landing page**](https://trafalgar-landing-page-delta.vercel.app/)
+<a href="https://trafalgar-landing-page-delta.vercel.app/" target="_blank">**Acesse a landing page**</a>
